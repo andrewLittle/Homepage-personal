@@ -1,23 +1,37 @@
-module.exports = function(grunt) {
+module.exports = function (grunt) {
 
-  // Project configuration.
-  grunt.initConfig({
-    pkg: grunt.file.readJSON('package.json'),
-    uglify: {
-      options: {
-        banner: '/*! <%= pkg.name %> <%= grunt.template.today("yyyy-mm-dd") %> */\n'
-      },
-      build: {
-        src: 'src/<%= pkg.name %>.js',
-        dest: 'build/<%= pkg.name %>.min.js'
-      }
-    }
-  });
+    // Project configuration.
+    grunt.initConfig({
+        pkg: grunt.file.readJSON('package.json'),
+        clean: ['./css/*'],
+        watch: {
+            files: ['./scss/*.scss'],
+            tasks: ['sass'],
+            options: {
+                spawn: false,
+                interrupt: true,
+            },
+        },
+        sass: {                              
+            dist: {                            
+                files: [{ 
+                    expand: true,
+                    cwd: 'scss',  
+                    src: ['*.scss'],
+                    dest: 'css/',
+                    ext: '.css'
+                }]
+            }
+        }
+    });
 
-  // Load the plugin that provides the "uglify" task.
-  grunt.loadNpmTasks('grunt-contrib-uglify');
+    // Load the plugin that provides the "uglify" task.
+    //grunt.loadNpmTasks('grunt-contrib-uglify');
+    grunt.loadNpmTasks('grunt-contrib-clean');
+    grunt.loadNpmTasks('grunt-contrib-watch');
+    grunt.loadNpmTasks('grunt-contrib-sass');
 
-  // Default task(s).
-  grunt.registerTask('default', ['uglify']);
+    // Default task(s).
+    grunt.registerTask('default', ['clean', 'watch']);
 
 };

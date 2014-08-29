@@ -1,10 +1,26 @@
 {
-  "name": "my-project-name",
-  "version": "0.1.0",
+  "name": "Homepage-personal",
+  "version": "0.0.1",
+  "description": "Personal homepage code",
+  "main": "gruntfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/andrewLittle/Homepage-personal.git"
+  },
+  "author": "Andrew Little",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/andrewLittle/Homepage-personal/issues"
+  },
+  "homepage": "https://github.com/andrewLittle/Homepage-personal",
   "devDependencies": {
-    "grunt": "~0.4.5",
-    "grunt-contrib-jshint": "~0.10.0",
-    "grunt-contrib-nodeunit": "~0.4.1",
-    "grunt-contrib-uglify": "~0.5.0"
+    "grunt": "^0.4.5",
+    "grunt-contrib-clean": "^0.6.0",
+    "grunt-contrib-jshint": "^0.10.0",
+    "grunt-contrib-sass": "^0.8.1",
+    "grunt-contrib-watch": "^0.6.1"
   }
 }
