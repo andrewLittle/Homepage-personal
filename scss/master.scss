@@ -4,6 +4,10 @@
 @import '_header';
 @import '_footer';
  
+* {
+	box-sizing: border-box;
+}
+
 body {
 	//background-color: grey;
 }

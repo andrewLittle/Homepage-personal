@@ -21,5 +21,35 @@ header {
 		text-decoration: none;
 		color: #000000;
 	}
+
+	@media screen and (min-width: 450px) {
+		.header__name {
+			line-height: 110px;
+		}
+
+		.header__menu {
+			display: none;
+		}
+
+		.header__nav-links {
+			display: block;
+			text-align: center;
+
+			li {
+				display: inline;
+				padding: 10px;
+			}
+
+			a {
+				text-decoration: none;
+				color: #000;
+
+				&:hover,
+				&.current {
+					border-bottom: 2px solid #000;
+				}
+			}
+		}
+	} 
 }
 
