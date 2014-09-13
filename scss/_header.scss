@@ -51,5 +51,34 @@ header {
 			}
 		}
 	} 
+
+	@media screen and (min-width: 900px) {
+		.header__nav-main {
+			max-width: 900px;
+			margin: 0 auto;
+			padding-top: 20px;
+		}
+
+		.header__name {
+			float: left;
+			line-height: normal;
+		}
+
+		.header__nav-links {
+			float: right;
+
+			li {
+				padding: 3px;
+			}
+
+			a {
+				&:hover,
+				&.current {
+					border-bottom: none;
+					color: #fff; 
+				}
+			}
+		}
+	}
 }
 

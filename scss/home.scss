@@ -10,4 +10,22 @@
 		padding: 0 10px 10px;
 		line-height: 1.25;
 	}
+
+	@media screen and (min-width: 450px) {
+		& {
+			width: 80%;
+			margin: 0 auto;
+		}
+
+		h2 {
+			width: 82%;
+			margin: 0 auto;
+		}
+	}
+
+	@media screen and (min-width: 550px) {
+		& {
+			max-width: 440px;
+		}
+	}
 }
