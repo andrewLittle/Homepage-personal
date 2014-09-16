@@ -1,7 +1,5 @@
 .home {
 	h2 {
-		font-size: 26px;
-		font-size: 2.6em;
 		padding: 10px;
 		text-align: center;
 	}
@@ -23,9 +21,20 @@
 		}
 	}
 
-	@media screen and (min-width: 550px) {
-		& {
+	@media screen and (min-width: 900px) {
+		&,
+		h2 {
+			width: auto;
+		}
+
+		h2 {
+			background-color: #bbbbbb;
+			height: 90px;
+		}
+
+		article {
 			max-width: 440px;
+			margin: 0 auto;
 		}
 	}
 }
