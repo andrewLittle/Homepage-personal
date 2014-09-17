@@ -66,6 +66,10 @@ header {
 		.header__name {
 			float: left;
 			line-height: normal;
+
+			.index & {
+				display: none;
+			}
 		}
 
 		.header__nav-links {

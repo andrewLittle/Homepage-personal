@@ -1,11 +1,15 @@
 .home {
 	h2 {
-		padding: 10px;
+		padding: 25px 10px 10px;
 		text-align: center;
+
+		span:before {
+			content: " ";
+		}
 	}
 
 	article {
-		padding: 0 10px 10px;
+		padding: 0 10px 50px;
 		line-height: 1.25;
 	}
 
@@ -19,6 +23,22 @@
 			width: 82%;
 			margin: 0 auto;
 		}
+
+		article {
+			line-height: 1.5;
+			padding-top: 15px;
+		}
+	}
+
+	@media screen and (min-width: 700px) {
+		& {
+			width: 440px;
+		}
+
+		article {
+			max-width: 440px;
+			margin: 0 auto;
+		}
 	}
 
 	@media screen and (min-width: 900px) {
@@ -30,11 +50,17 @@
 		h2 {
 			background-color: #bbbbbb;
 			height: 90px;
+			padding: 0;
+
+			span {
+				display: block;
+				padding: 5px;
+			}
 		}
 
 		article {
-			max-width: 440px;
-			margin: 0 auto;
+			line-height: 1.75;
+			padding-top: 50px;
 		}
 	}
 }

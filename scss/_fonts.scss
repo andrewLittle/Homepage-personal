@@ -43,6 +43,15 @@ article {
 	font-size: 2.6em;
 }
 
+@media screen and (min-width: 450px) {
+	.home {
+		article {
+			font-size: 17px;
+			font-size: 1.7em;
+		}
+	}
+}
+
 @media screen and (min-width: 900px) {
 	header {
 		h1 {
@@ -60,6 +69,15 @@ article {
 		h2 {
 			font-size: 42px;
 			font-size: 4.2em;
+			
+			span {
+				font-size: 26px;
+			}
+		}
+
+		article {
+			font-size: 18px;
+			font-size: 1.8em;
 		}
 	}
 }
