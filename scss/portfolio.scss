@@ -1,0 +1,33 @@
+.portfolio {
+	padding: 10px;
+
+	li {
+		margin: 20px 0;
+	}
+
+	h2 {
+		text-align: center;
+	}
+
+	h4 {
+		padding: 10px 0 10px 15px;
+	}
+
+	p {
+		line-height: 1.25;
+		padding-left: 15px;
+	}
+
+	@media screen and (min-width: 450px) {
+		h2 {
+			display: none;
+		}
+	}
+
+	@media screen and (min-width: 500px) {
+		& {
+			width: 500px;
+			margin: 0 auto;
+		}
+	}
+}
