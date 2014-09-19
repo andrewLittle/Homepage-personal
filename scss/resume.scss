@@ -1,0 +1,58 @@
+.resume {
+	padding: 10px;
+	line-height: 1.25;
+
+	h2 {
+		text-align: center;
+		padding-bottom: 10px;
+	}
+
+	.download {
+		display: none;
+	}
+
+	article {
+		h3 {
+			padding: 20px 0 10px;
+		}
+
+		ul {
+			list-style-type: circle;
+			list-style-position: outside;
+			margin-left: 20px;
+		}
+
+		li {
+			padding: 5px 0;
+		}
+	}
+
+	@media screen and (min-width: 450px) {
+		h2 {
+			display: none;
+		}
+	}
+
+	@media screen and (min-width: 600px) {
+		& {
+			max-width: 600px;
+			margin: 0 auto;
+			padding: 20px 10px;
+		}
+		h3 {
+			width: 100%;
+			float: left;
+		}
+		ul {
+			width: 75%;
+			float: right;
+		}
+	}
+
+	@media screen and (min-width: 900px) {
+		p {
+			padding-bottom: 20px;
+			border-bottom: 1px solid #000;
+		}
+	}
+}

@@ -45,6 +45,31 @@ article {
 	}
 }
 
+.resume {
+	h2 {
+		font-size: 26px;
+		font-size: 2.6em;
+	}
+
+	h3 {
+		font-size: 26px;
+	}
+}
+
+.contact {
+	h2 {
+		font-size: 26px;
+		font-size: 2.6em;
+	}
+
+	form {
+		label {
+			font-size: 16px;
+			font-size: 1.6em;
+		}
+	}
+}
+
 .email {
 	//font-family: 'PT Mono', ;
 }
@@ -56,7 +81,8 @@ article {
 }
 
 @media screen and (min-width: 450px) {
-	.home {
+	.home,
+	.profile {
 		article {
 			font-size: 17px;
 			font-size: 1.7em;
@@ -86,7 +112,10 @@ article {
 				font-size: 26px;
 			}
 		}
+	}
 
+	.home,
+	.portfolio {
 		article {
 			font-size: 18px;
 			font-size: 1.8em;

@@ -1,0 +1,55 @@
+.contact {
+	padding: 10px;
+
+	h2 {
+		text-align: center;
+	}
+
+	form {
+		padding: 20px 0;
+
+		input,
+		textarea {
+			width: 100%;
+			line-height: 2;
+			padding: 5px;
+			margin: 10px 0 20px;
+			resize: none;
+		}
+
+		button {
+			display: block;
+			margin: 0 auto;
+		}
+	}
+
+	@media screen and (min-width: 450px) {
+		& {
+			max-width: 450px;
+			margin: 0 auto;
+		}
+
+		h2 {
+			display: none;
+		}
+	}
+
+	@media screen and (min-width: 900px) {
+		& {
+			max-width: 600px;
+		}
+
+		form {
+			label {
+				//float: left;
+				//width: 40%;
+			}
+
+			input,
+			textarea {
+				//float: right;
+				//width: 55%;
+			}
+		}
+	}
+}
