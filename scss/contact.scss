@@ -20,6 +20,27 @@
 		button {
 			display: block;
 			margin: 0 auto;
+			height: 60px;
+			width: 250px;
+		}
+
+		input[type='submit'] {
+			height: 88px;
+			border: 1px solid #000;
+			background-color: green;
+			color: #fff;
+			border-radius: 5px;
+			-webkit-box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+			-moz-box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+			box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+
+			&:focus {
+				outline: none;
+				background-color: olive;
+				-webkit-box-shadow: 4px 4px 5px 0px rgba(50, 50, 50, 0.75);
+				-moz-box-shadow: 4px 4px 5px 0px rgba(50, 50, 50, 0.75);
+				box-shadow: 4px 4px 5px 0px rgba(50, 50, 50, 0.75);
+			}
 		}
 	}
 
@@ -41,14 +62,21 @@
 
 		form {
 			label {
-				//float: left;
-				//width: 40%;
+				//display: inline-block;
+				//width: 19%;
 			}
 
 			input,
 			textarea {
-				//float: right;
-				//width: 55%;
+				//display: inline-block;	
+				//width: 80%;
+			}
+
+			input[type='submit'] {
+				width: 38%;
+				height: 45px;
+				display: block;
+				margin: 0 auto;
 			}
 		}
 	}
