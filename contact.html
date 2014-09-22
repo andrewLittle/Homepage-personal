@@ -38,6 +38,11 @@
 			<input type="email" id="emailConfirm" />
 			<label for="message">Message</label>
 			<textarea rows="5" id="message"></textarea>
+			<ul id="form__error" class="form__error">
+				<li id="form__error-empty">Please fill in the empty fields.</li>
+				<li id="form__error-badEmail">Please enter a valid email address.</li>
+				<li id="form__error-noMatch">Please check your email address.</li>
+			</ul>
 			<input type="submit" id="emailSubmit" value="Drop me a line." />
 		</form>
 	</section>

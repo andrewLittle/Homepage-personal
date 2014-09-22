@@ -42,6 +42,19 @@
 				box-shadow: 4px 4px 5px 0px rgba(50, 50, 50, 0.75);
 			}
 		}
+		
+		.form__error {
+			color: red;
+			padding-bottom: 25px;
+
+			li {
+				display: none;
+			}
+		}
+
+		.error {
+			background-color: red;
+		}
 	}
 
 	@media screen and (min-width: 450px) {
