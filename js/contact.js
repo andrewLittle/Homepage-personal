@@ -35,9 +35,11 @@ var contactPage = {
 		}
 	},
 
-	resetForm: function() {
+	resetForm: function(event) {
 		var inputs = document.getElementsByTagName('input'),
 			textArea = document.getElementById('message');
+
+		event.preventDefault();
 
 		for(var i = 0; i < inputs.length; i++) {
 			var input = inputs[i];
@@ -53,14 +55,20 @@ var contactPage = {
 
 		document.activeElement.blur();
 
+		fail = {
+			empty: false,
+			badEmail: false,
+			noMatch: false
+		}
+
 		contactPage.customEventTrigger('contactPage.reset');
 	},
 
 	validateForm: function() {		
 		var inputs = document.getElementsByTagName('input'),
 			textArea = document.getElementById('message'),
-			emailRegex = /[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}/,
-			email = '';
+			email = document.getElementById('email'),
+			confirmEmail = document.getElementById('emailConfirm');
 
 		for(var i = 0; i < inputs.length; i++) {
 			var input = inputs[i];
@@ -70,16 +78,12 @@ var contactPage = {
 				input.className = 'error';
 				fail.empty = true;
 			}
+		}
 
-			if(input.type === 'email') {
-				email = input.value;
-				var temp = emailRegex.test(email);
-				if(!emailRegex.test(email)) {
-					fail.badEmail = true;
-				}
-			}
-
-			// Check for valid email
+		if(email.value.toLowerCase() !== confirmEmail.value.toLowerCase()) {
+			email.className = 'error';
+			confirmEmail.className = 'error';
+			fail.noMatch = true;
 		}
 
 		if(textArea.value === '') {
@@ -102,10 +106,14 @@ var contactPage = {
 		if(fail.badEmail) {
 			document.getElementById('form__error-badEmail').style.display = 'block';
 		}
+
+		if(fail.noMatch) {
+			document.getElementById('form__error-noMatch').style.display = 'block';
+		}
 	},
 
 	submit: function() {
-		alert("Form is good to go.");
+		formEl.submit();
 	}
 };
 
