@@ -1,6 +1,7 @@
 header {
 	height: 150px;
-	background-color: #bbbbbb;
+	background-color: #317490;
+	color: #fafafa;
 	
 	.header__name {
 		text-align: center;
@@ -19,7 +20,7 @@ header {
 		top: 10px;
 		right: 10px;
 		text-decoration: none;
-		color: #000000;
+		color: #fafafa;
 	}
 
 	@media screen and (min-width: 450px) {
@@ -42,11 +43,11 @@ header {
 
 			a {
 				text-decoration: none;
-				color: #000;
+				color: #fafafa;
 
 				&:hover,
 				&.current {
-					border-bottom: 2px solid #000;
+					border-bottom: 2px solid #e5b847;
 				}
 			}
 		}
@@ -83,7 +84,7 @@ header {
 				&:hover,
 				&.current {
 					border-bottom: none;
-					color: #fff; 
+					color: #e5b847; 
 				}
 			}
 		}

@@ -1,5 +1,6 @@
 footer {
-	background-color: #bbbbbb;
+	background-color: #317490;
+	color: #fafafa;
 
 	.footer__links {
 		display: none;
@@ -8,20 +9,23 @@ footer {
 	h2 {
 		font-size: 26px;
 		font-size: 2.6em;
-		border-bottom: 2px solid #000;
+		//border-bottom: 2px solid #e5b847;
+		border-bottom: 2px solid #ffe39b;
 		margin: 10px 10px 0 10px;
 		padding-top: 10px;
 	}
 
 	.footer__about {
 		padding: 10px;
+		line-height: 1.25;
 	}
 
 	.footer__links,
 	.footer__secondary-nav {
 
 		li {
-			border-bottom: 1px solid #000;
+			//border-bottom: 1px solid #e5b847;
+			border-bottom: 1px solid #ffe39b;
 			padding: 10px;
 
 			&:last-child {
@@ -31,7 +35,7 @@ footer {
 
 		a {
 			text-decoration: none;
-			color: #000000;
+			color: #fafafa;
 			display: block;
 		}
 	}
