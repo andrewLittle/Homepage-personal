@@ -28,7 +28,13 @@ module.exports = function (grunt) {
                 stripBanners: false
             },
             css: {
-                src: 'css/*.css',
+                src: [
+                    'css/master.css',
+                    'css/home.css',
+                    'css/portfolio.css',
+                    'css/resume.css',
+                    'css/contact.css'
+                ],
                 dest: 'css/styles.css'
             }
         },
