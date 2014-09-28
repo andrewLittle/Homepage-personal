@@ -1,0 +1,73 @@
+.ie {
+	html, body, div, span,
+	h1, h2, h3, h4, h5, h6, p, ul, li,
+	form, label {
+		margin: 0;
+		padding: 0;
+		border: 0;
+		font-size: 100%;
+		font: inherit;
+		vertical-align: baseline;
+	}
+
+	max-width: 800px;
+	margin: 0 auto;
+
+	ol, ul {
+		list-style: none;
+	}
+
+	.header__menu {
+		display: none;
+	}
+
+	.header__name {
+		float: left;
+	}
+	
+	.header__nav-links {
+		display: block;
+		text-align: center;
+		float: right;
+
+		li {
+			display: inline;
+			padding: 3px;
+		}
+
+		a {
+			text-decoration: none;
+			color: #000000;
+
+			&:hover,
+			&.current {
+				border-bottom: 2px solid #000000;
+			}
+		}
+	}
+
+	.footer__links {
+		display: none;
+	}
+
+	.footer__about-wrapper {
+
+		h2 {
+			width: 75%;
+		}
+	}
+
+	.footer__secondary-nav {
+		display: none;
+	}
+
+	span:before {
+		content: " ";
+	}
+
+	.group:after {
+	  content: "";
+	  display: table;
+	  clear: both;
+	}
+}

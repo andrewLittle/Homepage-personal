@@ -2,15 +2,15 @@ body {
   font-size: 10px;
   font-family: 'Merriweather', serif; }
 
-header {
+.header__nav-main {
   font-family: 'PT Sans', sans-serif; }
-  header h1 {
+  .header__nav-main h1 {
     font-size: 42px;
     font-size: 4.2em; }
-  header .header__nav-links {
+  .header__nav-main .header__nav-links {
     font-size: 26px;
     font-size: 2.6em; }
-  header .header__menu {
+  .header__nav-main .header__menu {
     font-size: 26px;
     font-size: 2.6em; }
 
