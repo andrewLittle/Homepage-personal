@@ -1,5 +1,10 @@
 <!doctype html>
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 8 ]> <html lang="en" class="ieBad"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="ie8"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
 <html lang="en">
+<!--<![endif]-->
 <head>
 	<meta charset="utf-8">
 	<!--<meta name="viewport" content="width=500" />-->
@@ -31,7 +36,7 @@
 
 	<link href='http://fonts.googleapis.com/css?family=PT+Sans|Merriweather:300,400' rel='stylesheet' type='text/css'>
 </head>
-<body class="index ie">
+<body class="index">
 	<header>
 		<nav class="header__nav-main group">
 			<a href="#secondary-nav" class="header__menu">Menu</a>
@@ -57,6 +62,7 @@
 		<article>
 			It's something I've been doing for a while now and I'm lucky to have found a challenge that I love waking up to every morning. I currently work with an amazing team at a large e-commerce site, but I'm always looking for new opportunities to hone and expand my knowledge and skills. I'm mainly a developer with a base of HTML, CSS, and JQuery, but I've played around with other front end technologies like Ruby, Slim, Flight, PHP, as well as Java, C++, and SQL. Design and UX is what I'm most interested in getting better at so I can participate in all aspects of the conversation. More information about what I'm currently doing can be found on my <a href="http://alittleblog.alittlewebdesign.net/" class="blog">blog</a> (which is always old) and I like to play around on <a href="http://codepen.io/andrewLittle/">CodePen</a>. The code for this site can be found <a href="http://github.com/andrewLittle/Homepage-personal">here</a>.
 		</article>
+		<div class="ieRedirect">This site will hopefully become better looking on IE8 over time but for right now, if you would like to see the full site, please access it using a more modern browser.</div>
 	</section>
 	<footer class="group">
 		<div class="footer-wrapper">

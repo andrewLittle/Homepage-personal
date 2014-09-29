@@ -1,4 +1,4 @@
-.ie {
+.ie8 {
 	font-size: 16px;
 
 	html, body, div, span,
@@ -69,6 +69,11 @@
 
 	span:before {
 		content: " ";
+	}
+
+	.ieRedirect {
+		display: block;
+		padding-top: 20px;
 	}
 
 	.group:after {
