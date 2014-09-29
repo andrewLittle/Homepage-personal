@@ -8,6 +8,12 @@ header {
 	}
 
 	.header__nav-main {
+		a {
+			border: 1px solid #fafafa;
+			border-radius: 5px;
+			padding: 5px;
+			background-color: #4c89a3;
+		}
 	}
 	
 	.header__nav-links {
@@ -47,6 +53,10 @@ header {
 			}
 
 			a {
+				border: none;
+				border-radius: 0;
+				padding: 0;
+				background-color: transparent;
 				text-decoration: none;
 				color: #fafafa;
 

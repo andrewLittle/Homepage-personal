@@ -4,7 +4,7 @@
 		text-align: center;
 		background-color: #317490;
 		color: #fafafa;
-		line-height: 1.25;
+		line-height: 1.6;
 
 		span:before {
 			content: " ";
@@ -13,7 +13,7 @@
 
 	article {
 		padding: 30px 10px 50px;
-		line-height: 1.25;
+		line-height: 1.6;
 	}
 
 	@media screen and (min-width: 450px) {
@@ -31,7 +31,7 @@
 		}
 
 		article {
-			line-height: 1.5;
+			line-height: 1.6;
 			padding-top: 15px;
 		}
 	}
@@ -58,6 +58,7 @@
 			color: #fafafa;
 			height: 100px;
 			padding: 0;
+			line-height: 1;
 
 			span {
 				display: block;
@@ -66,7 +67,7 @@
 		}
 
 		article {
-			line-height: 1.75;
+			line-height: 1.6;
 			padding-top: 50px;
 		}
 	}
