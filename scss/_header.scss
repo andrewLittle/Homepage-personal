@@ -1,10 +1,24 @@
 header {
-	height: 45px;
+	height: 60px;
 	background-color: #317490;
 	color: #fafafa;
 	
+	.index & {
+		.header__name {
+			display: none;
+		}
+	}
+
 	.header__name {
-		display: none;
+		padding: 15px;
+
+		.home__link {
+			border: none;
+			border-radius: 0;
+			padding: 0;
+			background-color: transparent;
+			color: #fafafa;
+		}
 	}
 
 	.header__nav-main {
@@ -33,10 +47,17 @@ header {
 			height: 150px;
 		}
 
+		.index & {
+			.header__name {
+				display: block;
+			}
+		}
+
 		.header__name {
 			text-align: center;
 			display: block;
-			line-height: 110px;
+			line-height: 100px;
+			padding: 0;
 		}
 
 		.header__menu {
