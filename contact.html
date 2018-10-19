@@ -26,10 +26,10 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 	<link rel="stylesheet" href="css/styles.min.css">
-	<!-- Comment in for local work
+	<!-- Comment in for local work -->
 	<link rel="stylesheet" href="css/master.css">
 	<link rel="stylesheet" href="css/contact.css">
-	-->
+	
 	<!--[if IE 8]>
 	<link rel="stylesheet" type="text/css" media="screen" href="hack/ie.css" />
 	<![endif]-->
@@ -75,8 +75,13 @@
 					<li id="form__error-badEmail">Please enter a valid email address.</li>
 					<li id="form__error-noMatch">Please check your email address.</li>
 				</ul>
-				<input type="submit" id="emailSubmit" value="Drop me a line." />
-				<div class="g-recaptcha" data-sitekey="6LfYmXUUAAAAAFBMwhseLeH6davxGcT4qGsOXX2f"></div>
+				<button 
+					class="g-recaptcha"
+					data-sitekey="6LfSyHUUAAAAAGRVxGpX31ioaqVZq1-CoUZuSbl5"
+					data-callback="YourOnSubmitFn">
+					Drop me a line.
+				</button>
+				<!-- <input type="submit" id="emailSubmit" value="Drop me a line." /> -->
 			</form>
 		</section>
 	</div>
@@ -122,8 +127,7 @@
 		</div>
 	</footer>
 	<script type="text/javascript" src="js/site.min.js"></script>
-	<!-- Comment in for local work
+	<!-- Comment in for local work -->
 	<script type="text/javascript" src="js/contact.js"></script>
-	-->
 </body>
 </html>
