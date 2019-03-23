@@ -113,7 +113,8 @@ var contactPage = {
 	},
 
 	submit: function() {
-		formEl.submit();
+		//formEl.submit();
+		grecaptcha.execute();
 	}
 };
 

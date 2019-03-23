@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
 <!--[if lt IE 8 ]> <html lang="en" class="ieBad"> <![endif]-->
 <!--[if IE 8 ]>    <html lang="en" class="ie8"> <![endif]-->
@@ -25,7 +25,7 @@
 	<!--  Mobile viewport optimized: j.mp/bplateviewport -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<link rel="stylesheet" href="css/styles.min.css">
+	<!-- <link rel="stylesheet" href="css/styles.min.css"> -->
 	<!-- Comment in for local work -->
 	<link rel="stylesheet" href="css/master.css">
 	<link rel="stylesheet" href="css/contact.css">
@@ -35,7 +35,7 @@
 	<![endif]-->
 
 	<link href='http://fonts.googleapis.com/css?family=PT+Sans|Merriweather:300,400' rel='stylesheet' type='text/css'>
-	<script src='https://www.google.com/recaptcha/api.js'></script>
+	<script src='https://www.google.com/recaptcha/api.js' async defer></script>
 </head>
 <body>
 	<header>
@@ -75,10 +75,11 @@
 					<li id="form__error-badEmail">Please enter a valid email address.</li>
 					<li id="form__error-noMatch">Please check your email address.</li>
 				</ul>
-				<button 
-					class="g-recaptcha"
+				<div id="recaptcha" class="g-recaptcha"
 					data-sitekey="6LfSyHUUAAAAAGRVxGpX31ioaqVZq1-CoUZuSbl5"
-					data-callback="YourOnSubmitFn">
+					data-callback="YourOnSubmitFn"
+					data-size="invisible"></div>
+				<button id="emailSubmit">
 					Drop me a line.
 				</button>
 				<!-- <input type="submit" id="emailSubmit" value="Drop me a line." /> -->
@@ -126,7 +127,7 @@
 			</ul>
 		</div>
 	</footer>
-	<script type="text/javascript" src="js/site.min.js"></script>
+	<!-- <script type="text/javascript" src="js/site.min.js"></script> -->
 	<!-- Comment in for local work -->
 	<script type="text/javascript" src="js/contact.js"></script>
 </body>
