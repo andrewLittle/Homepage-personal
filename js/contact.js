@@ -94,7 +94,8 @@ var contactPage = {
 		if(fail.empty || fail.badEmail || fail.noMatch) {
 			contactPage.customEventTrigger('contactPage.fail');
 		} else {
-			contactPage.customEventTrigger('contactPage.pass');
+			//contactPage.customEventTrigger('contactPage.pass');
+			grecaptcha.execute();
 		}
 	},
 
@@ -112,9 +113,9 @@ var contactPage = {
 		}
 	},
 
-	submit: function() {
+	submit: function(token) {
 		//formEl.submit();
-		grecaptcha.execute();
+		console.log('made it');
 	}
 };
 
